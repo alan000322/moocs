@@ -1,0 +1,38 @@
+/* QA card active */
+.card-header button {
+  color: #a5930e;
+}
+
+.QA-button {
+  color: rgb(117, 91, 24);
+}
+.QA-button:hover {
+  background-color: #F7BE33;
+  color: black;
+}
+/* QA text */
+.QA-text-button {
+  text-decoration: none!important;
+}
+.QA-text-button:hover {
+  color: black!important;
+}
+
+svg#donut-chart {
+margin: 0 auto;
+}
+
+text.inner-circle {
+font-weight: 400;
+font-size: 0px;
+}
+
+.arc {
+cursor: pointer;
+}  
+.arc text {
+  font-weight: 300;
+  font-size: 18px;
+  color: #111;
+}
+

@@ -1,0 +1,17 @@
+/* box */
+.box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding: 2em;
+}
+.box p {
+  color: antiquewhite;
+}
+.box h5 {
+  color: bisque;
+}
+.box h6 {
+  color: bisque;
+}

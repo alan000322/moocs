@@ -1,0 +1,1087 @@
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>PIXIU</title>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"/>
+		<!-- Include CSS file-->
+		<link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/scroll-button.css">
+		<link rel="stylesheet" href="./css/carousel.css">
+		<link rel="stylesheet" href="./css/member.css">
+		<link rel="stylesheet" href="./css/box.css">
+		<link rel="stylesheet" href="./css/timeline.css">
+		<link rel="stylesheet" href="./animate.css-master/animate.min.css">
+		<link rel="stylesheet" href="./css/chart.css">
+		<link rel="stylesheet" href="./css/qa.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700|Noto+Serif+TC:300,700&display=swap" rel="stylesheet">
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+		<script language="JavaScript">
+			$(function() {
+			  $('a[href*=#]').on('click', function(e) {
+			    e.preventDefault();
+			    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			  });
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+    
+    			/* Every time the window is scrolled ... */
+    			$(window).scroll( function(){
+				
+    			    /* Check the location of each desired element */
+    			    $('.fademe-manual').each( function(i){
+					
+    			        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    			        var bottom_of_window = $(window).scrollTop() + $(window).height();
+					
+    			        /* If the object is completely visible in the window, fade it it */
+    			        if( bottom_of_window > bottom_of_object ){
+						
+    			            $(this).animate({'opacity':'1'},1000);
+						
+    			        }
+					
+    			    }); 
+				
+    			});
+			});
+		</script>
+		
+	</head>
+    <body>	
+		<!--navbar-->
+		<nav class="navbar nav navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 0px 1px 8px 0px ;">
+			<a class="navbar-brand" href="#top"><img class="img-pixiulogo-navbar-width" style="position: relative;" src="./img/logo-sta-hd.png" alt="pixiu-logo"></a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+			<div class="collapse navbar-collapse text-center" id="navbars">
+		    	<ul class="navbar-nav mr-auto">
+		   			<!-- <li class="nav-item"> -->
+		    		<!--	<a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a> -->
+		      		<!-- </li> -->
+		      		
+		    <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                     Home<span class="sr-only">(current)</span>
+                 </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#business">商業模式</a>
+					 <a class="dropdown-item" href="#coin">代幣應用比例</a>
+					 <a class="dropdown-item" href="#partner">合作夥伴</a>
+                     <a class="dropdown-item" href="#timeline-title">發展路線</a>
+                     <a class="dropdown-item disabled" href="#ad">媒體推薦</a>
+                     <a class="dropdown-item disabled" href="#">評分平台</a>
+                     <a class="dropdown-item" href="#QA">常見問題</a>
+                     
+                 </div>
+            </li>
+		      	<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                         白皮書
+                     </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">中文白皮書</a>
+                        <a class="dropdown-item" href="#">英文白皮書</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+		        		<a class="nav-link" href="#Pixiu">關於PIXIU</a>
+		      		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#members">團隊成員</a>
+					</li>
+		      		
+					  
+		    	</ul>
+		    	
+		    	<ul class="nav navbar-nav nav-flex-icons ml-auto">
+					<li class="nav-item">
+		        		<a class="nav-link pr-3" href=""><i class="fa fa-telegram fa-1x px-1" aria-hidden="true"></i>Telegram</a>
+					</li>
+		  	        <li class="nav-item">
+		  	            <a class="nav-link" href="../zh-tw/">中文</a>
+		  	        </li>
+		  	        <li class="nav-item">
+		  	            <a class="nav-link" href="../zh-tw">/</a>
+		  	        </li>
+		  	        <li class="nav-item">
+		  	            <a class="nav-link" href="../en/">English</a>
+		  	        </li>
+		  	    </ul>
+		  	</div>
+		</nav>
+		<!--home-->
+		<section class="home-background header__content full-height" id="top">
+			<div class="container mt-4 pt-4">
+				<div class="row d-flex align-items-center justify-content-center text-center">
+					<span class="header__content__block text-han animated fadeInDown">
+						<p class="font-weight-bold text-light">PIXIU COIN</p>
+					</span>
+				</div>
+				<hr class="style-cloud" width="20%">
+				<div class="row d-flex justify-content-center text-center pt-2 pb-4">
+					<h6 class="sub-header__content text-han text-light font-weight-light animated fadeInDown">透過數位貨幣<br>讓更多人因穩定的黃金資產而獲利</h6>
+				</div>
+				<section class="scrolls" id="section03">
+					<a href="#Pixiu"><span></span></a>
+				</section>
+			
+			</div>
+		</section>
+		<!--intro-->
+		<section class="intro" id="Pixiu">
+			<div class="container pt-4 mt-3 ">
+				<div class="row justify-content-center">
+					<div class="col-md-4 py-4 px-4">
+						<div class="row justify-content-center pt-4">
+							<img style="position: relative; width: 180px; height: 180px;" src="./img/logo-sta-hd.png" alt="pixiu-logo">
+						</div>	
+						<div class="intro-left-text text-center pt-3">我們是 PIXIU MINING CO.</div>			
+					</div>
+					<div class="col-md-8 lead quotes text-left py-4 px-4">
+						<div class="d-flex justify-content-around pt-4">
+							<p class="pt-2" style="text-align: justify;">
+								貔貅為中國傳說的一種瑞獸。中國的風水學者認為貔貅是轉禍為祥的吉瑞之獸。從古至今，上至帝王、下至百姓都相信收藏和佩戴貔貅能帶來好運。
+							</p>
+						</div>
+						<div class="text-center">
+							<a class="btn btn-sm btn-outline-warning" href="#timeline" role="button"><i class="fa fa-arrow-circle-o-down pr-2" aria-hidden="true"></i>發展路線</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--photo-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 lead quotes py-4 px-4">
+						<div class="text-center pt-4">
+							<p class="pt-4" style="text-align: justify;">
+								我們發行的黃金貔貅幣（PIXIU coin）採取貔貅的意像，讓更多人能擁有穩定的代幣資產而獲利，黃金貔貅幣預計在三年內成為全球估值最高的數位黃金幣。
+							</p>
+						</div>
+						<div class="text-center">
+							<a class="btn btn-sm btn-outline-warning" href="#coin" role="button"><i class="fa fa-arrow-circle-o-right pr-2" aria-hidden="true"></i>代幣應用比例</a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="d-flex justify-content-center">
+							<div class="carousel slide py-4 my-2 mb-3 px-2" data-interval="2000"  id="photowall" data-ride="carousel" style="height: 400px; width: 400px;">
+								<ol class="carousel-indicators">
+									<li data-target="#photowall" data-slide-to="0" class="active"></li>
+									<li data-target="#photowall" data-slide-to="1"></li>
+									<li data-target="#photowall" data-slide-to="2"></li>
+									<li data-target="#photowall" data-slide-to="3"></li>
+									<li data-target="#photowall" data-slide-to="4"></li>
+									<li data-target="#photowall" data-slide-to="5"></li>
+									<li data-target="#photowall" data-slide-to="6"></li>
+									<li data-target="#photowall" data-slide-to="7"></li>
+								</ol>
+								<div class="carousel-inner img-thumbnail border border-warning">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./img/carousel/carousel-0.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-1.jpg" alt="Second slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-2.jpg" alt="Third slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-3.jpg" alt="4 slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-4.jpg" alt="5 slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-5.jpg" alt="6 slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-6.jpg" alt="7 slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./img/carousel/carousel-7.jpg" alt="8 slide">
+									</div>
+								</div>
+								<!--
+								<a class="carousel-control-prev" href="#photowall" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#photowall" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+								-->
+								<div class="text-center text-han pt-3">
+									礦區示意圖
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+						
+			</div>
+		</section>
+		<section class="intro-background">
+			<div class="container">
+				<div class="text-center text-light intro-text p-md-5 p-3">
+					團隊三大優勢
+				</div>
+				<div class="row d-flex justify-content-center pb-4 mb-1">
+					<div class="col-sm-4">
+						<i class="d-flex justify-content-center fa fa-lightbulb-o fa-3x pt-4 text-light" aria-hidden="true"></i>
+						<div class="card-body">
+							<div class="card-title text-center text-light font-weight-bold" style="font-size: 20px;">卓越品質</div>
+							<div class="card-text text-center text-light" style="font-size: 13px;">世界級礦業資源公司</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<i class="d-flex justify-content-center fa fa-users fa-3x pt-4 text-light" aria-hidden="true"></i>
+						<div class="card-body">
+							<div class="card-title text-center text-light font-weight-bold" style="font-size: 20px;">專業背景</div>
+							<div class="card-text text-center text-light" style="font-size: 13px;">熟悉美國西岸礦區(加州/內華達州)的專業工作團隊</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<i class="d-flex justify-content-center fa fa-briefcase fa-3x pt-4 text-light" aria-hidden="true"></i>
+						<div class="card-body">
+							<div class="card-title text-center font-weight-bold text-light" style="font-size: 20px;">資源豐富</div>
+							<div class="card-text text-center text-light" style="font-size: 12px;">擁有在美國經營礦業公司之資源</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--business-->
+		<section class="business business-background" id="business">
+			<div class="container pt-4">
+				<div class="row pt-2 pb-1 d-flex justify-content-center">
+					<h3 class="text-center fademe-manual" id="business"><span class="badge badge-warning fademe-manual">商業模式</span></h3>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4 fademe-manual img-fluid" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+				</div>
+			</div>
+			<div class="container">
+				<div class="text-center">
+				</div>
+				<div class="justify-content-center" align="center">
+					<img class="img-fluid pb-4" src="./img/business-model.png" alt="business-model" style="width: 95%;" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+					<div class="text-center mt-2 pt-2 pb-3">
+						
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-purpose.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold text-center" style="color: #4C3B2F">宗旨</p>
+									<p class="font-weight-light">我們發行的黃金貔貅幣採取貔貅的意像，讓更多人能擁有穩定的代幣資產而獲利。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-gold.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold text-center" style="color: #4C3B2F">可認購優先釋出的黃金</p>
+									<p class="font-weight-light">當黃金開採出時，會先釋出開採總量的百分之二十的黃金，讓代幣擁有者進行認購。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-feedback-shadow.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold d-flex justify-content-center" style="color: #4C3B2F">可於合作店家得到回饋</p>
+									<p class="font-weight-light">黃金貔貅幣將會與一些店家進行合作，例如銀樓或是黃金相關產業，讓持有者在購買金飾或黃金相關產品時會進行回饋代幣。</p>
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div class="row">
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-sign.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold d-flex justify-content-center" style="color: #4C3B2F">享有礦權認購權利</p>
+									<p class="font-weight-light">我們有多年的礦權購買經驗，因此，除了進行金礦開採外，會陸續投資有價值的礦權，而代幣擁有者享有礦權的認購權利，當之後有獲利時將會依據投資比例給予回饋。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-exchange.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold d-flex justify-content-center" style="color: #4C3B2F">可進行轉換</p>
+									<p class="font-weight-light">代幣持有者能夠於集團的合作廠商進行代幣與黃金的轉換。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 fademe-manual">
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="rounded-circle mb-2 text-center" style="width: 70px" src="./img/icon-invest.png" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+								</div>
+								<div class="col-sm-9">
+									<p class="font-weight-bold d-flex justify-content-center" style="color: #4C3B2F">優先投資權</p>
+									<p class="font-weight-light pb-4">代幣持有一定比例的擁有者，可享有優先投資權，可以投資官網上所提出的項目，例如金飾店或黃金加工商，當店家有獲利時，將會進行分潤。</p>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+		<!--代幣應用比例-->
+		<section class="coin-background" id="coin">
+			<div class="container pt-4 pb-4">
+				<div class="row pt-4 pb-4 d-flex justify-content-center">
+					<h3 class="text-center text-dark fademe-manual" id="business">
+						<span class="badge badge-warning fademe-manual">代幣應用比例</span>
+					</h3>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="fademe-manual" oncontextmenu="return false" onselectstart="return false" oncut = "return false">
+				</div>
+			</div>
+			<div class="container pt-4 pb-4">
+				<div class="row">
+					<div class="col-lg-6 pt-3 mt-1 text-center">
+						<!--<svg id="donut-chart"></svg>-->
+  						<img src="./img/coin-charts1.png" alt="chart" class="chartset" style="width: 100%;" oncontextmenu="return false" onselectstart="return false" oncut ="return false">  
+					</div>
+					<div class="col-lg-6 pt-3 mt-1 text-center">
+						<img src="./img/coin-charts2.png" alt="chart-description" class="chartset" style="width: 80%;" oncontextmenu="return false" onselectstart="return false" oncut ="return false">
+					</div>
+				</div>
+				<div class="row pt-4 pb-4">
+
+				</div>
+			</div>
+		</section>
+		<!--member-->
+		<section class="members-background" id="members">
+			<div class="container pt-4 pb-1" id="member">
+				<h3 class="text-center fademe-manual"><span class="badge badge-warning fademe-manual">團隊成員</span></h3>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4">
+				</div>
+				<div class="row d-flex justify-content-center">
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-1.jpeg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-3">
+				                    <p style="font-size: 12px; text-align:justify;">興趣廣泛的Silvia，多年來投入創業、公關行銷、礦業開發投資與親子教養領域，深感在人生中就是要堅持信念，並勇於嘗試與冒險，祝福就會隨之而來；此次投入區塊鏈領域，欲藉其多年來跨領域的專業經驗，創造黃金在區塊鏈上的多樣化應用。</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Silvia Chi 紀惠雅</h5>
+							<p class="text-center"><span class="pt-1">CEO &amp; CO-Funder 聯合創始人  ceo</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/silvia-chi-574aa7195/" target="blank"><i class="fa fa-linkedin-square fa-1x"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-2.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-2">
+				                    <p style="font-size: 12px; text-align:justify;">中國醫藥大學醫學系，除了醫學專業外也擅長各種固定收益與房地產信託基金的投資與分析，舉辦投資教學多年，並受訪撰寫雜誌文章，近年來開始研究區塊鏈對於投資的重要性。</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Shawn Tsai 蔡賢龍</h5 class="text-center">
+							<p class="text-center"><span class="pt-1">CFO 財務長</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="#" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+				    </div>
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-3.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-4">
+				                    <p style="font-size: 12px; text-align:justify;">為一個活躍的創業家，對於創新產業充滿十足的熱情，在兩岸都曾創立成功的企業。過去的創業工作經驗讓他對於傳統供應鏈體系有深入的研究及獨到的見解。2015年接觸加密貨幣市場後，開始長期持有加密貨幣，深信區塊鏈朝流是必然的趨勢，投身於潮流的前端，期待帶來更多元的新知及掌握未來的知識。</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Charles Chen 陳健男</h5>
+							<p class="text-center"><span class="pt-1">COO 營運長</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/charles-chen-1a0777197/" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-4.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-3" style="font-size: 12px; text-align:justify;">
+				                    <p>Jay多年來擔任科技業主管，深知技術對於企業的重要性，由於對科技與生活應用有著濃厚的興趣與好奇心，喜歡研究相關新的投資概念與應用發展，因此投入區塊鏈已經有多年，更醉心研究區塊鏈應用如何在生活中造福人們的未來。</p>
+				                </div>
+				                
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Jay Shih 施登元</h5>
+							<p class="text-center"><span class="pt-1">CTO 首席技術官</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/jay-shih-61945b197" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+						</div>
+					</div>
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-5.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-3">
+				                    <p style="font-size: 12px; text-align:justify;">對公共關係、行銷領域擁有強大投入熱情的Sabrina，已沉浸此領域10年並擁有WBSA商務企劃專業認證擅長媒體議題規畫、媒體關係經營、文字企劃與撰寫、活動統籌與執行、社群經營、整合行銷專案管理與執行。</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Sabrina Wang 汪怡君</h5>
+							<p class="text-center"><span class="pt-1">PR 公共關係暨社群行銷經理Community Manager</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/sabrina-wang-985449197/" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+				    </div>
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-6.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 bt-2">
+				                    <p style="font-size: 12px; text-align:justify;">國立交通大學資訊工程學系碩士，在無線網路通訊領域研發已有10年以上經歷，近年來對於區塊鏈，數位貨幣技術有深入研究。</p>
+				                </div>
+				                
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Will Chuang 莊士緯</h5>
+							<p class="text-center"><span class="pt-1">RD 研發設計工程師</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="http://linkedin.com/in/will-chuang-02035397" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+				    </div>
+				</div>
+				<!--#########################################################-->
+				<h3 class="text-center fademe-manual pt-2 pb-2">顧問</h3>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-1 pb-4">
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="col-sm-4 fademe-manual">
+						<div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-7.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-3">
+				                    <p style="font-size: 12px; text-align:justify;">Leon 於1995 年任職於IBM 金融事業群，主導網路銀行系統之規劃與建設，對於網路金融交易相關之安全技術有著全面且深入的建設經驗。Leon個人擁有IBM internet solution expert 之專家認證。</p>
+				                </div>
+				                
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Leon Huang 黃亮遠</h5 class="text-center">
+							<p class="text-center"><span class="pt-1">行銷顧問</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/????" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+				    </div>
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-8.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 mt-4">
+				                    <p style="font-size: 10px; text-align:justify; text-align:justify;">在珠寶業同時擁有鑑定、設計與銷售能力的Jennifer不僅曾擔任美商TIFFANY台灣業務總監，同時也具備美國GIA寶石學院研究寶石專家資格。目前擔任東風衛視珠寶節目"大尋寶家"的珠寶設計鑑定老師。</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Jennifer Chen 陳紅玉</h5 class="text-center">
+							<p  class="text-center"><span class="pt-1">行銷顧問</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="https://www.linkedin.com/in/??" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+				    </div>
+				    <div class="col-sm-4 fademe-manual">
+				        <div class="team-member">
+				            <div class="team-img">
+				                <img src="./member/member-9.jpg" alt="team member" class="rounded-circle mx-auto d-block img-fluid img-thumbnail border-dark" style="width: 70%;">
+				            </div>
+				            <div class="team-hover">
+				                <div class="desk pt-4 bt-4">
+				                    <p style="font-size: 12px; text-align:justify;">立勤國際法律事務所/主持律師。投入輔導創業投資超過15年經驗，於台北、上海、東協提供法律服務。致力於領導台灣年輕一代走向世界。</p>
+								</div>
+				            </div>
+				        </div>
+				        <div class="team-title">
+				            <h5 class="text-center">Brain Huang 黃沛聲</h5>
+							<p class="text-center"><span class="pt-1">法律顧問</span></p>
+							<div class="s-link text-center" style="color: #333">
+								<a href="http://linkedin.com/in/????" target="blank"><i class="fa fa-linkedin-square"></i></a>
+							</div>
+				        </div>
+					</div>
+				</div>
+				<!--<div class="row d-flex justify-content-center pt-3 pb-4">
+					<div class="col-sm-4">
+						<div class="card">
+							<div class="card-body">
+								<div class="team-title">
+									<h5 class="text-center">William H. Birds</h5><p class="text-center"><span>地質學家</span></p>
+								</div>
+								
+								<p style="font-size: 12px;">擁有科羅拉多礦業學院的地質學博士學位，是註冊的專業地質學家，擁有40多年的採礦和礦業產業經驗。 他同時擁有商業運作和礦業專業知識的強大組合。他對地質學（最著名的稀土元素），礦物學和冶金學的實踐和理論理解被認為是傑出的。</p>
+								
+							</div>
+							<div class="team-hover">
+				                <div class="desk pt-4 mt-3">
+				                </div>
+				                <div class="s-link">
+									<a href="https://www.linkedin.com/in/??" target="blank"><i class="fa fa-linkedin-square"></i></a>
+				                </div>
+				            </div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<div class="card-body">
+								<div class="team-title">
+									<h5 class="text-center">會計師事務所</h5 class="text-center"><p  class="text-center"><span>鑑價師</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</section>
+		<!--parner-->
+		<section id="partner">
+			<div class="container pt-4">
+				<div class="text-center fademe-manual">
+					<h3><span class="badge badge-lg badge-warning">合作夥伴</span></h3>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4 fademe-manual">
+				</div>
+			</div>
+			<div class="container pb-4">
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<img src="./img/co-1.jpg" alt="co-1" style="width: 50%;">
+					</div>
+					<div class="col-md-4 text-center">
+						<img src="./img/co-2.jpg" alt="co-2" style="width: 50%;" >
+					</div>
+					<div class="col-md-4 text-center">
+						<img src="./img/co-3.jpg" alt="co-3" style="width: 50%;" >
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="timeline-titles" id=timeline-title>
+			<div class="container pt-4 pb-1" id="member">
+				<h3 class="text-center fademe-manual"><span class="badge badge-warning fademe-manual">發展路線</span></h3>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4">
+				</div>
+			</div>
+		</section>
+		<!--timeline-->
+		<section id="members">
+			<img src="./img/timelines.png" alt="timeline" style="width: 100%">
+		</section>
+			<!--
+			<script src="https://use.typekit.net/bkt6ydm.js"></script>
+			<script>try{Typekit.load({ async: true });}catch(e){}</script>
+			<section class="timeline-style" id="timeline">
+				<div class="container">
+					<div class="row mb-3">
+						<div class="col-12">
+							<ul class="timeline timeline-split">
+								<li class="timeline-item period fademe-manual">
+									<div class="timeline-info"></div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h5 class="timeline-title">2019</h5>
+									</div>
+								</li>
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q3</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">項目核心成員籌集</p>
+									</div>
+								</li>
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q4</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">項目規劃與籌備</p>
+									</div>
+								</li>
+								<li class="timeline-item period fademe-manual">
+									<div class="timeline-info"></div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h5 class="timeline-title">2020</h5>
+									</div>
+								</li>
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q1</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">官方網站上線</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span></span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">IEO項目啟動</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q2</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">組織加州地質專家支援礦區探勘</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span></span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">PMC、Vision Mining Group遠見礦業集團與中國黃金集團，一起至北加州進行探勘。</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q3</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">公布MMC礦區第一階段探勘報告，持續擴大PMC公司在美國西岸的礦區資產。</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q4</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">陸續於各交易所上線</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span></span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">PMC公司購買內華達州礦區Poker Game礦區</p>
+									</div>
+								</li>							
+								<li class="timeline-item period fademe-manual">
+									<div class="timeline-info"></div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h5 class="timeline-title">2021</h5>
+									</div>
+								</li>
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q1</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">礦場運轉前置作業</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span></span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">組織管理與工務團隊</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q2</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">聘請礦業律師與礦業專家啟動開礦申請程序</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q3</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">完成礦場試運轉生產第一批黃金成品</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span></span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">PMC公司與金飾/珠寶品牌合作，可在實體通路兌現</p>
+									</div>
+								</li>							
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q4</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">在美國西岸持續找尋具潛力的黃金礦區，進行合作與購買礦區</p>
+									</div>
+								</li>		
+								<li class="timeline-item period fademe-manual">
+									<div class="timeline-info"></div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h5 class="timeline-title">2022</h5>
+									</div>
+								</li>
+								<li class="timeline-item fademe-manual">
+									<div class="timeline-info">
+										<span class="Q_font-sizes">Q1</span>
+									</div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<p class="timeline-title">成立黃金避險基金</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+         -->
+		
+		<!--ad--><!--
+		<section class="ad-background" id="ad">
+			<div class="container">
+				<div class="row pt-4 d-flex justify-content-center">
+					<span class="badge badge-warning">媒體推薦</span>
+				</div>
+			</div>
+			<div class="container">
+				<h3 class="text-center pt-3" id="develop">媒體推薦</h3>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4">
+				</div>
+				<div class="row">
+					<div class="col-md-4 pt-2 pb-4">
+						<div class="card">
+							<div class="card-header">
+								<p class="font-weight-bold text-center"> </p>
+							</div>
+							<div class="card-body">
+								
+							</div>
+							<div class="card-footer text-right">
+								<small class="text-muted"> </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pt-2 pb-4">
+						<div class="card">
+							<div class="card-header">
+								<p class="font-weight-bold text-center"> </p>
+							</div>
+							<div class="card-body">
+								 
+							</div>
+							<div class="card-footer text-right">
+								<small class="text-muted"> </small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pt-2 pb-4">
+						<div class="card">
+							<div class="card-header">
+								<p class="font-weight-bold text-center"> </p>
+							</div>
+							<div class="card-body">
+							 
+							</div>
+							<div class="card-footer text-right">
+								<small class="text-muted"> </small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+		<!--Q&A-->
+		<section class="QA-background pb-4">
+			<div class="container pt-4" id="QA">
+				<div class="text-center fademe-manual">
+					<h3><span class="badge badge-lg badge-warning">常見問題</span></h3>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<img src="img/brown-lines.png" class="pt-3 pb-4 fademe-manual">
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="#brand" style="text-decoration: none;">
+							<div class="card" style="background-color: rgb(253, 253, 253);">
+								<div class="card-body QA-button">
+									<div class="d-flex justify-content-center pt-2 pb-2">
+										<img src="img/logo-transparent.png" style="width: 150px; height: 150px;" alt="PIXIU">
+									</div>
+									<h5 class="text-center font-weight-light">公司簡介與品牌相關</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#mine" style="text-decoration: none;">
+							<div class="card" style="background-color: rgb(253, 253, 253);">
+								<div class="card-body QA-button">
+									<div class="d-flex justify-content-center pt-2 pb-2">
+										<img src="img/mountains.png"  style="width: 150px; height: 150px;" alt="mining">
+									</div>
+									<h5 class="text-center font-weight-light">礦區相關</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#coins_purpose" style="text-decoration: none;">
+							<div class="card" style="background-color: rgb(253, 253, 253);">
+								<div class="card-body QA-button">
+									<div class="d-flex justify-content-center pt-2 pb-2">
+										<img src="img/MONEY.png" style="width: 150px; height: 150px;" alt="PIXIU">
+									</div>
+									<h5 class="text-center font-weight-light">黃金代幣相關</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<!--<hr width="70%" class="pt-2 pb-2">-->
+				<div class="mb-4 mt-4" id="brand"></div>
+				<div id="QandA1">
+					<!-- <h6 class="font-weight-light my-4 fademe-manual"> 公司簡介與品牌相關 </h6>-->
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link btn_links QA-text-button"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									黃金貔貅的命名由來？
+								</button>
+							</h5>
+						</div>
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#QandA1">
+							<div class="card-body bg-transparent">
+								<div class="row mx-3">
+									貔貅為中國傳說的一種瑞獸。中國的風水學者認為貔貅是轉禍為祥的吉瑞之獸。從古至今，上至帝王、下至百姓都相信收藏和佩戴貔貅能帶來好運。我們採取貔貅的意涵，以加密貨幣的方式發行「黃金貔貅幣」(英文名 PIXIU coin)，讓更多人能擁有穩定的黃金資產而獲利，我們相信PIXIU coin將會在三年內成為全球估值最高的黃金加密貨幣。 
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									黃金貔貅的核心價值？
+								</button>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#QandA1">
+							<div class="card-body mx-3">
+								將有價值的礦山進行開採或是販售，提供投資者不同的代幣應用管道，讓代幣擁有者不只能夠投資礦山，也能夠換黃金。
+							</div>
+						</div>
+					</div>
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									PMC管理團隊簡介？
+								</button>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#QandA1">
+							<div class="card-body mx-3">
+								PMC 管理團隊專注於北美地區黃金產業投資，礦業資源整合與礦山行銷。
+							</div>
+						</div>
+					</div>
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingFour">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									目前合作夥伴？
+								</button>
+							</h5>
+						</div>
+						<div id="mine"></div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#QandA1">
+							<div class="card-body mx-3">
+								2018年與美國Vision Mining Group簽訂授權合約，主導其所屬北加州Quincy礦區資源之整合與開發。經由多方協作與努力，成功與中國黃金集團建立戰略合作關係。於2018年12月24日，由中金集團所屬之中國黃金集團科技有限公司與Vision Mining Group在中國北京市簽訂合作協議書，結合雙方優勢進行實質合作，共同開發北美黃金礦產資源。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="QandA2">
+					<!--<h6 class="font-weight-light my-4 fademe-manual"> 礦區相關 </h6>-->
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingFive">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									目前擁有的礦區？
+								</button>
+							</h5>
+						</div> 
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#QandA2">
+							<div class="card-body mx-3">
+								PMC公司目前在北加州擁有四十個礦區，位置上分為大小兩個區域，分別位於普盧默斯縣（Plumas county）與昆西市（Quincy city）以西約 5 英里和 11 英里處，礦區面積 769 英畝，約 311 萬平方公尺。
+							</div>
+						</div>
+					</div>
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingSix">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									目前擁有礦區價值？
+								</button>
+							</h5>
+						</div>
+						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#QandA2">
+							<div class="card-body mx-3">
+								2013年底 Minerals Mining Corp.委託台灣安侯建業聯合會計師事務所(KPMG)，進行礦區資產價值分析。以評估金銀蘊藏量輔以當時均價，黃金1202美元/盎司、白銀每19.37美元/盎司計算，扣除總開採成本33.35億美元後，由KPMG全球礦業產業財務顧問(KPMG LLP)出具分析報告，評估資產價值為美金54.47億元。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="QandA3">
+					<!--<h6 class="font-weight-light my-4 fademe-manual"> 代幣相關 </h6>-->
+					<div id="coins_purpose"></div>
+					<div class="card-transparent fademe-manual">
+						<div class="card-header" id="headingSeven">
+							<h5 class="mb-0 text-center">
+								<button class="btn btn-link collapsed QA-text-button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+									黃金貔貅代幣用途？
+								</button>
+							</h5>
+						</div>
+						<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#QandA3">
+							<div class="card-body mx-3">
+								投資礦山、換取黃金、黃金相關產業投資。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<footer class="footer footer--bg">
+			<div class="container">
+				<div class="row d-flex justify-content-center py-4">
+					<div class="col-md-3 d-flex justify-content-center padding-footer-setting">
+						<a class="color-black text-light" href="">
+							<i class="fa fa-envelope fa-2x px-1 pr-3 font-weight-light" aria-hidden="true"></i>support@pixiumining.gold
+						</a>
+					</div>
+					
+					<div class="col-md-6 d-flex justify-content-center">
+						<a class="color-black text-light" href=""><i class="fa fa-facebook-square fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-instagram fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-twitter-square fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-github-square fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-reddit-square fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-telegram fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-btc fa-2x px-1" aria-hidden="true"></i></a>
+						<a class="color-black text-light" href=""><i class="fa fa-medium fa-2x px-1" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>

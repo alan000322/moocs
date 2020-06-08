@@ -1,0 +1,210 @@
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>（服務學習）磨課師懶人包</title>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"/>
+		<!-- Include CSS file-->
+		<link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/scroll-button.css">
+		<link rel="stylesheet" href="./css/carousel.css">
+		<link rel="stylesheet" href="./css/member.css">
+		<link rel="stylesheet" href="./css/box.css">
+		<link rel="stylesheet" href="./css/timeline.css">
+		<link rel="stylesheet" href="./animate.css-master/animate.min.css">
+		<link rel="stylesheet" href="./css/chart.css">
+		<link rel="stylesheet" href="./css/qa.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700|Noto+Serif+TC:300,700&display=swap" rel="stylesheet">
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+		<script language="JavaScript">
+			$(function() {
+			  $('a[href*=#]').on('click', function(e) {
+			    e.preventDefault();
+			    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			  });
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+    
+    			/* Every time the window is scrolled ... */
+    			$(window).scroll( function(){
+				
+    			    /* Check the location of each desired element */
+    			    $('.fademe-manual').each( function(i){
+					
+    			        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    			        var bottom_of_window = $(window).scrollTop() + $(window).height();
+					
+    			        /* If the object is completely visible in the window, fade it it */
+    			        if( bottom_of_window > bottom_of_object ){
+						
+    			            $(this).animate({'opacity':'1'},1000);
+						
+    			        }
+					
+    			    }); 
+				
+    			});
+			});
+		</script>
+		
+	</head>
+    <body>	
+		<!--navbar-->
+		<nav class="navbar nav navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 0px 1px 8px 0px ;">
+			<div class="collapse navbar-collapse text-center" id="navbars">
+		    	<ul class="navbar-nav mr-auto">
+		    		<li class="nav-item dropdown">
+                		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+					 Home
+                		</a>
+                    	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    		<a class="dropdown-item" href="#intro">三大特色</a>
+							<a class="dropdown-item disabled" href="">懶人包專區</a>
+							<a class="dropdown-item" href="https://www.ewant.org" target="_blank">更多資訊</a>
+                 		</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.ewant.org" target="_blank">Ewant 平台</a>
+		    		</li>
+		    		<li class="nav-item">
+		    			<a class="nav-link" href="https://www.ewant.org/local/enterprise/collegepage.php?id=20" target="_blank">高中生MOOCs</a>
+					</li>	  
+		    	</ul>
+		  	</div>
+		</nav>
+		<!--home-->
+		<section class="home-background header__content full-height" id="top">
+			<div class="container mt-4 pt-4">
+				<div class="row d-flex align-items-center justify-content-center text-center">
+					<span class="header__content__block text-han animated fadeInDown">
+						<p class="font-weight-bold text-light">三分鐘了解「高中生磨課師」</p>
+					</span>
+				</div>
+				<hr class="style-cloud" width="20%">
+				<div class="row d-flex justify-content-center text-center pt-2 pb-4">
+					<h6 class="sub-header__content text-han text-light font-weight-light animated fadeInDown">無時無刻、任何地方<br>都可以無限制的學習大平台！</h6>
+				</div>
+				<section class="scrolls" id="section03">
+					<a href="#intro"><span></span></a>
+				</section>
+			
+			</div>
+		</section>
+		<!--intro-->
+		<section class="it-background" id="intro">
+			<div class="container">
+				<div class="text-center text-dark intro-text p-md-5 p-3">
+					<img src="./img/MOOCs-03.png" width="300" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card-body">
+							<i class="fa fa-bookmark-o fa-3x d-flex justify-content-center" aria-hidden="true"></i>
+							<h5 class="card-title text-center pt-3">多樣的課程選擇</h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card-body">
+							<i class="fa fa-laptop fa-3x d-flex justify-content-center" aria-hidden="true"></i>
+							<h5 class="card-title text-center pt-3">隨時可以用網路上課</h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card-body">
+							<i class="fa fa-shield fa-3x d-flex justify-content-center" aria-hidden="true"></i>
+							<h5 class="card-title text-center pt-3">通過考試可以拿到證書！</h5>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center text-dark intro-text p-md-5 p-3">
+					<img src="./img/MOOCs-04.png" width="300" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+					<h5 class="pt-2 pb-3">ewant育網是全臺最大的磨課師平台，擁有88所合作學校，累積超過1100門精彩課程！</h5>
+					<br>
+					<h5 class="pt-2 pb-3">(1) 修課免費   (2) 付費認證、通過考試，可以得到修課證書！</h5>
+					<br>
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4">
+							<a class="btn btn-outline-dark btn-lg btn-block" href="https://www.ewant.org/" role="button" target="_blank">進入Ewant平台</a>
+						</div>
+						<div class="col-md-4">
+							<a class="btn btn-outline-dark btn-lg btn-block" href="#spec" role="button" target="_blank">我目前有哪些計畫可以選擇？</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="half-height banner-background">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col pt-4">
+						<div class="text-light text-center">
+							<img src="img/MOOCs-11.png" width="130" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+						</div>
+						<h4 class="text-light text-center">個計畫可以選擇</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="spec-background" id="spec">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 text-center">
+						<img src="img/MOOCs-06.png" width="500" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+						<span class="badge badge-danger">現正熱烈報名中</span>
+						<div class="row d-flex justify-content-center py-4">
+							<div class="col-4 text-center">
+								<i class="fa fa-street-view fa-3x" aria-hidden="true"></i>
+								<p class="pt-3">提前體驗大學專業課程，探索未來興趣</h5>
+							</div>
+							<div class="col-4 text-center">
+								<i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
+								<p class="pt-3">修課完畢提供證書作為 “學習歷程檔案 ” !!</p>
+							</div>
+							<img class="mt-4 mb-4" src="img/MOOCs-10.png" height="150" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-10">
+								<a class="btn btn-outline-dark btn-lg btn-block" href="https://ewanths.nctu.edu.tw" target="_blank" role="button" target="_blank">我年紀屬於 國二～高三 ，我想看更多  <i class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 text-center">
+						<img src="img/MOOCs-07.png" width="500" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+						<div class="row d-flex justify-content-center py-4">
+							<div class="col-4 text-center">
+								<i class="fa fa-book fa-3x" aria-hidden="true"></i>
+								<p class="pt-3">因應108課綱，規劃自主學習</h5>
+							</div>
+							<div class="col-4 text-center">
+								<i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
+								<p class="pt-3">學習成果證書亦可作為 “學習歷程檔案 ” !!</p>
+							</div>
+							<img class="mt-4" src="img/MOOCs-09.png" height="200" oncontextmenu="return false" onselectstart="return false" oncopy = "return false" oncut = "return false">
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-10">
+								<a class="btn btn-outline-dark btn-lg btn-block" href="https://www.ewant.org/local/enterprise/generalcourse.php?id=64" target="_blank" role="button" target="_blank">每學期都可報名，詳情請看  <i class="fa fa-arrow-right fa-1x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-4 my-4"></div>
+		</section>
+    </body>
+</html>

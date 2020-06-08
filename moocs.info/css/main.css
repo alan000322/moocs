@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+/* whole class setting */
+
+.full-height {
+  height: 100%;
+}
+.half-height {
+    height: 20%;
+    background-color: #2d2d2d;
+}
+
+a {
+  text-decoration: none
+}
+a .color-black {
+  color: #000000;
+}
+.image-half-round {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 50%;
+}
+/* fade in animate (manually) */
+.fademe-manual
+{
+    opacity:0;
+} 
+
+/* background image*/
+.home-background {
+    background-image: url(../img/MOOCs-01.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: block;
+    background-size: cover;
+}
+.it-background {
+    background-image: url(../img/MOOCs-02.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: block;
+    background-size: cover;
+}
+.banner-background {
+    background-image: url(../img/MOOCs-08.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: block;
+    background-size: cover;
+}
+.spec-background {
+    background-image: url(../img/MOOCs-05.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: block;
+    background-size: cover;
+}
+@media only screen and (max-width: 1200px) {
+    .intro-text {
+        font-weight: 400; 
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .intro-text {
+        font-weight: 300; 
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .quotes {
+        font-size: 18px;
+    }
+    .img-pixiulogo-width-responsive {
+        height: 40%;
+        width: 40%;
+  }
+}
+/*intro-left-text**/
+@media only screen and (max-width: 990px) {
+  .intro-left-text {
+    font-weight: 700; 
+    font-size: 25px;
+  }
+  .img-pixiulogo-width-responsive {
+    height: 60%;
+    width: 60%;
+}
+}
+@media only screen and (min-width: 990px) {
+  .intro-left-text {
+    font-weight: 700; 
+    font-size: 25px;
+    
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .quotes {
+        font-size: 20px;
+    }
+    .img-pixiulogo-width-responsive {
+        width: 50%;
+        padding-top: 3px;
+    }
+}
+
+.img-pixiulogo-navbar-width {
+    width: 50px;
+}
+
+
+/*business background*/
+.business-background {
+    background-image: url(../img/scene/scene04-light.jpg);
+    background-repeat: no-repeat;
+    background-position: top;  
+    background-size: cover;	
+    display: block;
+}
+
+
+.coin-background {
+    background-image: url(../img/low_poly_background2.0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;	 
+    display: block;
+    
+}
+.members-background {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.QA-background {
+    background-color: rgb(253, 253, 253);
+    background-size: cover;	
+}
+.ad-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;	 
+}
+
+.chartset {
+    width: 100%;
+}
+@media only screen and (min-width: 992px) {
+    
+    .padding-chart-setting {
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    
+    .padding-chart-setting {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    .padding-footer-setting {
+        margin-bottom: 30px;
+    }
+}
